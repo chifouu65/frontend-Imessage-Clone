@@ -1,6 +1,6 @@
 import {signIn, useSession} from 'next-auth/react'
 
-export default function Home() {
+function Home() {
   const { 
     data
    } = useSession()
@@ -16,3 +16,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home
